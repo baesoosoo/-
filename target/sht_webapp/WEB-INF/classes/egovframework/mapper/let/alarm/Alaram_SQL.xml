@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="alarmMapper">
+	
+	<select id="selectAlarm" resultType="AlarmVO">
+		SELECT	
+				DEFCON
+				, WATCHCON
+				, CHUNGMU
+				, JINDO
+				, INFOCON
+				, FIREHOLDING
+		FROM	ALARM
+	</select>
+	
+	<update id="selectAlarm" parameterType="AlarmVO">
+		UPDATE	ALARM
+		SET		DEFCON = #{defcon}
+				, WATCHCON = #{watchcon}
+				, CHUNGMU = #{chungmu}
+				, JINDO = #{jindo}
+				, INFOCON = #{infocon}
+				, FIREHOLDING = #{fireHolding}
+		FROM	ALARM
+	</update>
+	
+</mapper>

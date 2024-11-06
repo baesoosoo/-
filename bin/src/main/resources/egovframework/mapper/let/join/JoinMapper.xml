@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.com.join.mapper.JoinMapper">
+	
+	<insert id="insertMem" parameterType="egovframework.com.join.model.MemberDTO">
+	
+	insert into lettngnrlmber (mber_id, password,mber_nm) VALUES (#{mber_id}, #{password},#{mber_nm})
+	
+	</insert>
+
+</mapper>
